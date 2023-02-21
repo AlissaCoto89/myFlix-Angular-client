@@ -8,7 +8,6 @@ import { MatSnackBar } from '@angular/material/snack-bar'; // Notifications
   templateUrl: './user-login-form.component.html',
   styleUrls: ['./user-login-form.component.scss'],
 })
-
 export class UserLoginFormComponent implements OnInit {
   @Input() userData = { Username: '', Password: '' };
 
@@ -26,7 +25,7 @@ export class UserLoginFormComponent implements OnInit {
         console.log(result);
         localStorage.setItem('user', result.user.Username);
         localStorage.setItem('token', result.token);
-        this.dialogRef.close(); 
+        this.dialogRef.close();
         this.snackBar.open(result, 'OK', {
           duration: 2000,
         });
