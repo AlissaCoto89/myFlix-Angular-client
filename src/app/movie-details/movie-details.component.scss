@@ -1,16 +1,24 @@
 $color: #fff;
 $backgroundColor: #180124;
+$borderColorCard: #5f5763;
 
 .summary-dialog {
   padding: 1rem;
   color: $color;
   background-color: $backgroundColor;
+  border-color: $borderColorCard;
 
   &-content {
     color: $color;
     padding: 1rem;
     line-height: 1.2;
+    box-shadow: 0 0 20px grey
   }
+}
+
+.summary-actions {
+  padding: 0;
+  min-height: min-content;
 }
 
 .summary-close-button {

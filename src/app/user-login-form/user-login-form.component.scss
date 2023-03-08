@@ -1,5 +1,5 @@
-$cardColor: rgb(56, 56, 56);
-$labelColor: rgb(197, 197, 197);
+$cardColor: #29013d;
+$labelColor: grey;
 $textColor: #fff;
 $boxShadowColor: #1e1e1e;
 
@@ -20,7 +20,11 @@ $boxShadowColor: #1e1e1e;
     justify-content: center;
 }
 
-mat-label {
+.mat-card-title {
+    margin-bottom: 20px;
+}
+
+.mat-label {
     color: $labelColor;
 }
 

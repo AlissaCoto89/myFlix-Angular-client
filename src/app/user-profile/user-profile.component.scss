@@ -1,10 +1,10 @@
-$color: rgb(179, 176, 179);
-$backgroundColorCard: #252127;
-$borderColorCard: #5f5763;
-$linkColor: rgb(70, 142, 173);
-$hoverLinkColor: rgb(234, 163, 71);
+$color: #fff;
+$backgroundColor: #372242;
+$borderColorCard: #372242;
+
 
 .profile {
+    background-color: $backgroundColor;
     padding: 1rem;
     box-sizing: border-box;
     max-width: 400px;
@@ -15,19 +15,22 @@ $hoverLinkColor: rgb(234, 163, 71);
 
     &-card-header {
         font-size: 1.3rem;
-        color: $color;
+        color: #000;
         padding-bottom: 1rem;
         box-sizing: border-box;
         font-weight: 500;
+        text-align: center;
     }
 
     &-update {
         &-header {
-            color: $color;
+            color: #000;
             font-size: 1.2rem;
             font-weight: normal;
             padding-bottom: 0.5rem;
         }
+
+
 
         form {
             display: flex;
@@ -38,23 +41,21 @@ $hoverLinkColor: rgb(234, 163, 71);
 
     &-actions {
         display: flex;
-        // flex-direction: column;
         align-items: flex-start;
         gap: 8px;
 
         &-update-btn {
-            background-color: rgb(136, 55, 154);
+            background-color: rgb(82, 11, 98);
             color: white;
+            border-color: #5f5763;
+            box-shadow: grey;
+
         }
 
         &-delete-btn {
             background-color: #bcbcbc;
             color: rgb(43, 41, 41);
+            box-shadow: grey;
         }
-    }
-
-    .profile-card-header {
-        text-align: center;
-
     }
 }

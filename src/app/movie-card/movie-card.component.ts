@@ -1,22 +1,24 @@
-import { Component, OnInit } from "@angular/core";
-import { FetchApiDataService } from "../fetch-api-data.service";
-import { MatDialog } from "@angular/material/dialog";
-import { GenreComponent } from "../genre/genre.component";
-import { DirectorComponent } from "../director/director.component";
-import { MovieDetailsComponent } from "../movie-details/movie-details.component";
+import { Component, OnInit } from '@angular/core';
+import { FetchApiDataService } from '../fetch-api-data.service';
+import { MatDialog } from '@angular/material/dialog';
+import { GenreComponent } from '../genre/genre.component';
+import { DirectorComponent } from '../director/director.component';
+import { MovieDetailsComponent } from '../movie-details/movie-details.component';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 @Component({
-  selector: "app-movie-card",
-  templateUrl: "./movie-card.component.html",
-  styleUrls: ["./movie-card.component.scss"],
+  selector: 'app-movie-card',
+  templateUrl: './movie-card.component.html',
+  styleUrls: ['./movie-card.component.scss'],
 })
 export class MovieCardComponent {
   movies: any[] = [];
   favoriteMovies: any[] = [];
   constructor(
-    private fetchApiData: FetchApiDataService,
-    private dialog: MatDialog
-  ) { }
+    public fetchApiData: FetchApiDataService,
+    public dialog: MatDialog,
+    public snackBar: MatSnackBar
+  ) {}
 
   ngOnInit(): void {
     this.getMovies();
@@ -38,14 +40,24 @@ export class MovieCardComponent {
   }
 
   addToFavorite(movieId: string): void {
-    this.fetchApiData.addFavoriteMovie(movieId).subscribe((resp: any) => {
-      this.getFavoriteMovies();
+    console.log(movieId);
+    this.fetchApiData.addFavoriteMovie(movieId).subscribe((result) => {
+      console.log(result);
+      this.snackBar.open('Movie has been added to your favorites.', 'OK', {
+        duration: 2000,
+      });
+      this.ngOnInit();
     });
   }
 
   removeFromFavorite(movieId: string): void {
-    this.fetchApiData.removeFavoriteMovie(movieId).subscribe((resp: any) => {
-      this.getFavoriteMovies();
+    console.log(movieId);
+    this.fetchApiData.removeFavoriteMovie(movieId).subscribe((result) => {
+      console.log(result);
+      this.snackBar.open('Movie has been removed from your favorites.', 'OK', {
+        duration: 2000,
+      });
+      this.ngOnInit();
     });
   }
 
@@ -65,8 +77,8 @@ export class MovieCardComponent {
     const { Name, Description } = movie.Genre;
     this.dialog.open(GenreComponent, {
       data: { Name, Description },
-      panelClass: "genre-dialog-background",
-      width: "400px",
+      panelClass: 'genre-dialog-background',
+      width: '400px',
     });
   }
 
@@ -74,8 +86,8 @@ export class MovieCardComponent {
     const { Name, Birth, Bio } = movie.Director;
     this.dialog.open(DirectorComponent, {
       data: { Name, Birth, Bio },
-      panelClass: "director-dialog-background",
-      width: "400px",
+      panelClass: 'director-dialog-background',
+      width: '400px',
     });
   }
 
@@ -83,8 +95,8 @@ export class MovieCardComponent {
     const { Name, Description } = movie;
     this.dialog.open(MovieDetailsComponent, {
       data: { Name, Description },
-      panelClass: "synopsis-dialog-background",
-      width: "400px",
+      panelClass: 'synopsis-dialog-background',
+      width: '400px',
     });
   }
 }

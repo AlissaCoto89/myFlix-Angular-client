@@ -1,11 +1,9 @@
 $color: #fff;
-$backgroundColor: #312b34;
+$backgroundColor: #372242;
 $backgroundColorCard: #180124;
 $borderColorCard: #5f5763;
-$linkColor: rgb(70, 142, 173);
-$hoverLinkColor: rgb(234, 163, 71);
 $directedColor: #fff;
-$boxShadowColor: #1e1e1e;
+
 
 :host {
     .movies {
@@ -36,6 +34,7 @@ $boxShadowColor: #1e1e1e;
         max-width: 280px;
         width: 280px;
         margin: 15px;
+        box-shadow: 0 0 20px grey;
     }
 
     .mat-card-header {
@@ -43,6 +42,8 @@ $boxShadowColor: #1e1e1e;
         display: flex;
         align-items: center;
         color: $color;
+        font-weight: bold;
+        margin-bottom: 15px;
     }
 
     .mat-card-title {
@@ -52,16 +53,12 @@ $boxShadowColor: #1e1e1e;
         text-align: center;
     }
 
-    .mat-card-subtitle {
-        display: flex;
-        justify-content: center;
-        text-align: center;
-    }
 
     img {
         height: 350px;
         width: 200px;
         object-fit: contain;
+        margin-top: 15px;
     }
 
     .add-to-favorite-btn {
