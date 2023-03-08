@@ -1,0 +1,36 @@
+$color: #fff;
+$backgroundColor: #180124;
+
+:host {
+    .director-dialog {
+        padding: 1rem;
+        color: $color;
+        background-color: $backgroundColor;
+
+        &-content {
+            color: $color;
+            padding: 1rem;
+            line-height: 1.2;
+        }
+    }
+
+    .director-actions {
+        padding: 0;
+        min-height: min-content;
+    }
+
+    .director-close-button {
+        position: absolute;
+        margin-right: 20px;
+        top: 0;
+        right: 0;
+        padding: 0;
+        line-height: 14px;
+        min-width: auto;
+        border: 20px;
+        font-size: 20px;
+        background-color: transparent;
+        cursor: pointer;
+        color: #ffffff;
+    }
+}

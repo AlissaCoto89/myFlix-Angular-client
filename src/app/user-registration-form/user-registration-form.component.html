@@ -1,10 +1,11 @@
 <mat-card>
   <mat-card-header>
-    <mat-card-title>Sign Up!</mat-card-title>
+    <mat-card-title>Register!</mat-card-title>
   </mat-card-header>
   <mat-card-content>
     <form>
       <mat-form-field>
+        <mat-label>Username</mat-label>
         <input
           matInput
           [(ngModel)]="userData.Username"
@@ -15,6 +16,7 @@
         />
       </mat-form-field>
       <mat-form-field>
+        <mat-label>Password</mat-label>
         <input
           matInput
           [(ngModel)]="userData.Password"
@@ -25,6 +27,7 @@
         />
       </mat-form-field>
       <mat-form-field>
+        <mat-label>Email</mat-label>
         <input
           matInput
           [(ngModel)]="userData.Email"
@@ -35,6 +38,7 @@
         />
       </mat-form-field>
       <mat-form-field>
+        <mat-label>Birthday</mat-label>
         <input
           matInput
           [(ngModel)]="userData.Birthday"
@@ -46,7 +50,7 @@
     </form>
   </mat-card-content>
   <mat-card-actions>
-    <button mat-raised-button (click)="registerUser()" color="primary">
+    <button mat-raised-button (click)="registerUser()" color="basic">
       Sign Up
     </button>
   </mat-card-actions>

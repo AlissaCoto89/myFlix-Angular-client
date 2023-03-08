@@ -1,0 +1,36 @@
+$cardColor: rgb(56, 56, 56);
+$labelColor: rgb(197, 197, 197);
+$textColor: #fff;
+$boxShadowColor: #1e1e1e;
+
+.mat-card {
+    max-width: 300px;
+    margin: auto;
+    padding: 30px;
+    flex-direction: column;
+    box-shadow: 0 10px 30px $boxShadowColor;
+    background-color: $cardColor;
+    justify-content: space-evenly;
+}
+
+.mat-card-header {
+    margin-bottom: 20px;
+    color: $textColor;
+    display: flex;
+    justify-content: center;
+}
+
+mat-label {
+    color: $labelColor;
+}
+
+input.mat-input-element {
+    color: $textColor;
+}
+
+.mat-card>.mat-card-actions {
+    margin-left: 0;
+    padding-bottom: 0;
+    display: flex;
+    justify-content: space-evenly;
+}

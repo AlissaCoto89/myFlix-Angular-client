@@ -5,6 +5,7 @@
   <mat-card-content>
     <form>
       <mat-form-field>
+        <mat-label>Username</mat-label>
         <input
           matInput
           [(ngModel)]="userData.Username"
@@ -15,6 +16,7 @@
         />
       </mat-form-field>
       <mat-form-field>
+        <mat-label>Password</mat-label>
         <input
           matInput
           [(ngModel)]="userData.Password"
@@ -27,8 +29,6 @@
     </form>
   </mat-card-content>
   <mat-card-actions>
-    <button mat-raised-button (click)="loginUser()" color="primary">
-      Login
-    </button>
+    <button mat-raised-button (click)="loginUser()" color="basic">Login</button>
   </mat-card-actions>
 </mat-card>

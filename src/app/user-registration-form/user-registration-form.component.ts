@@ -15,9 +15,9 @@ export class UserRegistrationFormComponent implements OnInit {
     public fetchApiData: FetchApiDataService,
     public dialogRef: MatDialogRef<UserRegistrationFormComponent>,
     public snackBar: MatSnackBar
-  ) {}
+  ) { }
 
-  ngOnInit(): void {}
+  ngOnInit(): void { }
 
   registerUser(): void {
     this.fetchApiData.userRegistration(this.userData).subscribe(
