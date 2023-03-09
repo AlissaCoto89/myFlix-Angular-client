@@ -4,7 +4,6 @@ $backgroundColorCard: #180124;
 $borderColorCard: #5f5763;
 $directedColor: #fff;
 
-
 :host {
     .movies {
         background-color: $backgroundColor;
@@ -52,7 +51,6 @@ $directedColor: #fff;
         justify-content: center;
         text-align: center;
     }
-
 
     img {
         height: 350px;

@@ -4,43 +4,45 @@ $textColor: #fff;
 $boxShadowColor: grey;
 $labelColor: #636363;
 
-* {
-  box-sizing: border-box;
-}
+:host {
+  * {
+    box-sizing: border-box;
+  }
 
-.mat-card {
-  max-width: 300px;
-  margin: auto;
-  padding: 30px;
-  flex-direction: column;
-  box-shadow: 0 10px 30px $boxShadowColor;
-  background-color: $cardColor;
-  justify-content: space-evenly;
-}
+  .mat-card {
+    max-width: 300px;
+    margin: auto;
+    padding: 30px;
+    flex-direction: column;
+    box-shadow: 0 10px 30px $boxShadowColor;
+    background-color: $cardColor;
+    justify-content: space-evenly;
+  }
 
-.mat-card-header {
+  .mat-card-header {
     margin-bottom: 20px;
     color: $textColor;
     display: flex;
     justify-content: center;
     color: $textColor;
-}
+  }
 
-mat-label {
-  color: $labelColor;
-}
+  mat-label {
+    color: $labelColor;
+  }
 
-input.mat-input-element {
-  color: $textColor;
-}
+  input.mat-input-element {
+    color: $textColor;
+  }
 
-.login-form {
+  .login-form {
     box-shadow: 0 0 40px $boxShadowColor;
-    
-}
-.mat-card > .mat-card-actions {
-  margin-left: 0;
-  padding-bottom: 0;
-  display: flex;
-  justify-content: space-evenly;
+  }
+
+  .mat-card>.mat-card-actions {
+    margin-left: 0;
+    padding-bottom: 0;
+    display: flex;
+    justify-content: space-evenly;
+  }
 }

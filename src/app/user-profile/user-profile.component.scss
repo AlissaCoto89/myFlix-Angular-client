@@ -4,20 +4,21 @@ $textColor: #fff;
 $boxShadowColor: grey;
 $labelColor: #636363;
 
-* {
-  box-sizing: border-box;
-}
+:host {
+  * {
+    box-sizing: border-box;
+  }
 
-.profile-page {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 40px 40px;
-  background-color: $backgroundColor;
-}
+  .profile-page {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 40px;
+    background-color: $backgroundColor;
+  }
 
-.profile-card {
+  .profile-card {
     max-width: 400px;
     margin: auto;
     padding: 30px;
@@ -26,26 +27,27 @@ $labelColor: #636363;
     background-color: $cardColor;
     justify-content: space-evenly;
     color: $textColor;
-}
+  }
 
-.profile-title {
-  margin-bottom: 20px;
-  color: $textColor;
-  display: flex;
-  justify-content: center;
-}
+  .profile-title {
+    margin-bottom: 20px;
+    color: $textColor;
+    display: flex;
+    justify-content: center;
+  }
 
-mat-label {
-  color: $labelColor;
-}
+  mat-label {
+    color: $labelColor;
+  }
 
-input.mat-input-element {
-  color: $textColor;
-}
+  input.mat-input-element {
+    color: $textColor;
+  }
 
-.mat-card > .mat-card-actions {
-  margin-left: 0;
-  padding-bottom: 0;
-  display: flex;
-  justify-content: space-evenly;
+  .mat-card>.mat-card-actions {
+    margin-left: 0;
+    padding-bottom: 0;
+    display: flex;
+    justify-content: space-evenly;
+  }
 }

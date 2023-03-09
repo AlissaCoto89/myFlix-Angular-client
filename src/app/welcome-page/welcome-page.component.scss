@@ -3,41 +3,42 @@ $cardColor: #180124;
 $textColor: #fff;
 $boxShadowColor: grey;
 
-* {
-  box-sizing: border-box;
-}
+:host {
+  * {
+    box-sizing: border-box;
+  }
 
-.welcome-page {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 30px 40px;
-  background-color: $backgroundColor;
-}
+  .welcome-page {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 40px;
+    background-color: $backgroundColor;
+  }
 
-.welcome-card {
-  max-width: 300px;
-  margin: auto;
-  padding: 30px;
-  flex-direction: column;
-  box-shadow: 0 0 40px $boxShadowColor;
-  background-color: $cardColor;
-  justify-content: space-evenly;
-}
+  .welcome-card {
+    max-width: 300px;
+    margin: auto;
+    padding: 30px;
+    flex-direction: column;
+    box-shadow: 0 0 40px $boxShadowColor;
+    background-color: $cardColor;
+    justify-content: space-evenly;
+  }
 
-.welcome-card-header {
-  margin-bottom: 20px;
-  color: $textColor;
-  display: flex;
-  justify-content: center;
-}
+  .welcome-card-header {
+    margin-bottom: 20px;
+    color: $textColor;
+    display: flex;
+    justify-content: center;
+  }
 
-.mat-card > .mat-card-actions:last-child {
-  margin-left: 20px;
-  margin-right: 20px;
-  padding-bottom: 0;
-  display: flex;
-  justify-content: space-evenly;
-  
+  .mat-card>.mat-card-actions:last-child {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-bottom: 0;
+    display: flex;
+    justify-content: space-evenly;
+  }
 }

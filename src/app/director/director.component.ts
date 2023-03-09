@@ -14,7 +14,7 @@ export class DirectorComponent implements OnInit {
       Bio: string;
       Birth: string;
     }
-  ) {}
+  ) { }
 
-  ngOnInit(): void {}
+  ngOnInit(): void { }
 }

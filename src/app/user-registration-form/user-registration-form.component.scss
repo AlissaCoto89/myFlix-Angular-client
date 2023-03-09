@@ -4,16 +4,16 @@ $textColor: #fff;
 $boxShadowColor: grey;
 $labelColor: #636363;
 
-* {
-  box-sizing: border-box;
-}
+:host {
+  * {
+    box-sizing: border-box;
+  }
 
-.user-reg-page {
+  .user-reg-page {
     box-shadow: 0 0 40px $boxShadowColor;
+  }
 
-}
-
-.mat-card-reg {
+  .mat-card-reg {
     max-width: 300px;
     margin: auto;
     padding: 30px;
@@ -22,32 +22,32 @@ $labelColor: #636363;
     background-color: $cardColor;
     justify-content: space-evenly;
     color: $textColor;
-}
+  }
 
-.mat-card-header {
-  margin-bottom: 20px;
-  color: $textColor;
-  display: flex;
-  justify-content: center;
-  color: $textColor;
-}
+  .mat-card-header {
+    margin-bottom: 20px;
+    color: $textColor;
+    display: flex;
+    justify-content: center;
+    color: $textColor;
+  }
 
-mat-label {
-  color: $labelColor;
-}
+  .mat-label {
+    color: $labelColor;
+  }
 
-input.mat-input-element {
-  color: $textColor;
-}
+  input.mat-input-element {
+    color: $textColor;
+  }
 
-.mat-form {
+  .mat-form {
     box-shadow: 0 0 40px $boxShadowColor;
-}
+  }
 
-.mat-card > .mat-card-actions {
-  margin-left: 0;
-  padding-bottom: 0;
-  display: flex;
-  justify-content: space-evenly;
-  
+  .mat-card>.mat-card-actions {
+    margin-left: 0;
+    padding-bottom: 0;
+    display: flex;
+    justify-content: space-evenly;
+  }
 }

@@ -1,7 +1,9 @@
 <div class="profile-page">
   <mat-card class="profile-card">
     <mat-card-header class="profile-card-header">
-      <mat-card-title class="profile-title">Update {{ updatedUser.Username }}'s Profile</mat-card-title>
+      <mat-card-title class="profile-title"
+        >Update {{ updatedUser.Username }}'s Profile</mat-card-title
+      >
     </mat-card-header>
     <mat-card-content class="user-profile-card-content">
       <form class="profile-form">
@@ -51,7 +53,11 @@
       </form>
     </mat-card-content>
     <mat-card-actions class="user-profile-actions">
-      <button mat-raised-button (click)="updateUserInfo()" style="background-color: grey">
+      <button
+        mat-raised-button
+        (click)="updateUserInfo()"
+        style="background-color: grey"
+      >
         <mat-icon>edit</mat-icon>
         Update profile
       </button>

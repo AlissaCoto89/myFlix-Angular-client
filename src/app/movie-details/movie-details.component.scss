@@ -2,36 +2,38 @@ $color: #fff;
 $backgroundColor: #180124;
 $borderColorCard: #5f5763;
 
-.summary-dialog {
-  padding: 1rem;
-  color: $color;
-  background-color: $backgroundColor;
-  border-color: $borderColorCard;
-
-  &-content {
-    color: $color;
+:host {
+  .summary-dialog {
     padding: 1rem;
-    line-height: 1.2;
-    box-shadow: 0 0 20px grey
+    color: $color;
+    background-color: $backgroundColor;
+    border-color: $borderColorCard;
+
+    &-content {
+      color: $color;
+      padding: 1rem;
+      line-height: 1.2;
+      box-shadow: 0 0 20px grey;
+    }
   }
-}
 
-.summary-actions {
-  padding: 0;
-  min-height: min-content;
-}
+  .summary-actions {
+    padding: 0;
+    min-height: min-content;
+  }
 
-.summary-close-button {
-  position: absolute;
-  margin-right: 20px;
-  top: 0;
-  right: 0;
-  padding: 0;
-  line-height: 14px;
-  min-width: auto;
-  border: 20px;
-  font-size: 20px;
-  background-color: transparent;
-  cursor: pointer;
-  color: #ffffff;
+  .summary-close-button {
+    position: absolute;
+    margin-right: 20px;
+    top: 0;
+    right: 0;
+    padding: 0;
+    line-height: 14px;
+    min-width: auto;
+    border: 20px;
+    font-size: 20px;
+    background-color: transparent;
+    cursor: pointer;
+    color: #ffffff;
+  }
 }

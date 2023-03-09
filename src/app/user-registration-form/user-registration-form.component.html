@@ -1,59 +1,63 @@
 <div class="user-reg-page">
   <mat-card class="mat-card-reg">
-  <mat-card-header class="mat-card-header">
-    <mat-card-title>Register User:</mat-card-title>
-  </mat-card-header>
-  <mat-card-content>
-    <form class="mat-form">
-      <mat-form-field>
-        <mat-label>Username</mat-label>
-        <input
-          matInput
-          [(ngModel)]="userData.Username"
-          placeholder="Username"
-          type="text"
-          name="Username"
-          required
-        />
-      </mat-form-field>
-      <mat-form-field>
-        <mat-label>Password</mat-label>
-        <input
-          matInput
-          [(ngModel)]="userData.Password"
-          type="password"
-          placeholder="Password"
-          name="Password"
-          required
-        />
-      </mat-form-field>
-      <mat-form-field>
-        <mat-label>Email</mat-label>
-        <input
-          matInput
-          [(ngModel)]="userData.Email"
-          type="email"
-          placeholder="Email"
-          name="Email"
-          required
-        />
-      </mat-form-field>
-      <mat-form-field>
-        <mat-label>Birthday</mat-label>
-        <input
-          matInput
-          [(ngModel)]="userData.Birthday"
-          type="date"
-          placeholder="Birthday"
-          name="Birthday"
-        />
-      </mat-form-field>
-    </form>
-  </mat-card-content>
-  <mat-card-actions>
-    <button mat-raised-button (click)="registerUser()" style="background-color: grey">
-      <mat-icon>how_to_reg</mat-icon> Register
-    </button>
-  </mat-card-actions>
-</mat-card>
+    <mat-card-header class="mat-card-header">
+      <mat-card-title>Register User:</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <form class="mat-form">
+        <mat-form-field>
+          <mat-label>Username</mat-label>
+          <input
+            matInput
+            [(ngModel)]="userData.Username"
+            placeholder="Username"
+            type="text"
+            name="Username"
+            required
+          />
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Password</mat-label>
+          <input
+            matInput
+            [(ngModel)]="userData.Password"
+            type="password"
+            placeholder="Password"
+            name="Password"
+            required
+          />
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Email</mat-label>
+          <input
+            matInput
+            [(ngModel)]="userData.Email"
+            type="email"
+            placeholder="Email"
+            name="Email"
+            required
+          />
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Birthday</mat-label>
+          <input
+            matInput
+            [(ngModel)]="userData.Birthday"
+            type="date"
+            placeholder="Birthday"
+            name="Birthday"
+          />
+        </mat-form-field>
+      </form>
+    </mat-card-content>
+    <mat-card-actions>
+      <button
+        mat-raised-button
+        (click)="registerUser()"
+        style="background-color: grey"
+      >
+        <mat-icon>how_to_reg</mat-icon> Register
+      </button>
+    </mat-card-actions>
+  </mat-card>
 </div>
