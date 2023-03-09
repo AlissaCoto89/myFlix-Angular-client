@@ -1,70 +1,64 @@
-<div class="profile">
+<div class="profile-page">
   <mat-card class="profile-card">
-  <h2 class="profile-card-header">Update {{ updatedUser.Username }} Profile</h2>
-  <mat-card-content class="profile-update">
-    <form>
-      <mat-form-field>
-        <mat-label>Username</mat-label>
-        <input
-          matInput
-          [(ngModel)]="updatedUser.Username"
-          value="{{ updatedUser.Username }}"
-          type="text"
-          name="Username"
-          required
-        />
-      </mat-form-field>
-      <mat-form-field>
-        <mat-label>Password</mat-label>
-        <input
-          matInput
-          [(ngModel)]="updatedUser.Password"
-          placeholder=""
-          type="password"
-          name="Password"
-          required
-        />
-      </mat-form-field>
-      <mat-form-field class="user-field">
-        <mat-label>Email</mat-label>
-        <input
-          matInput
-          [(ngModel)]="updatedUser.Email"
-          type="email"
-          value="{{ updatedUser.Email }}"
-          name="Email"
-          required
-        />
-      </mat-form-field>
-      <mat-form-field>
-        <mat-label>Birthday</mat-label>
-        <input
-          matInput
-          [(ngModel)]="updatedUser.Birthday"
-          type="date"
-          value="{{ updatedUser.Birthday | date }}"
-          name="Birthday"
-        />
-      </mat-form-field>
-    </form>
-  </mat-card-content>
-  <mat-card-actions class="profile-actions">
-    <button
-      class="profile-actions-update-btn"
-      mat-raised-button
-      (click)="updateUserInfo()"
-      color="warn"
-    >
-      Update profile
-    </button>
-    <button
-      class="profile-actions-delete-btn"
-      mat-raised-button
-      (click)="deleteAccount()"
-      color="warn"
-    >
-      Delete account
-    </button>
-  </mat-card-actions>
-</mat-card>
+    <mat-card-header class="profile-card-header">
+      <mat-card-title class="profile-title">Update {{ updatedUser.Username }}'s Profile</mat-card-title>
+    </mat-card-header>
+    <mat-card-content class="user-profile-card-content">
+      <form class="profile-form">
+        <mat-form-field>
+          <mat-label>Username</mat-label>
+          <input
+            matInput
+            [(ngModel)]="updatedUser.Username"
+            value="{{ updatedUser.Username }}"
+            type="text"
+            name="Username"
+            required
+          />
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Password</mat-label>
+          <input
+            matInput
+            [(ngModel)]="updatedUser.Password"
+            placeholder=""
+            type="password"
+            name="Password"
+            required
+          />
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Email</mat-label>
+          <input
+            matInput
+            [(ngModel)]="updatedUser.Email"
+            type="email"
+            value="{{ updatedUser.Email }}"
+            name="Email"
+            required
+          />
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Birthday</mat-label>
+          <input
+            matInput
+            [(ngModel)]="updatedUser.Birthday"
+            type="date"
+            value="{{ updatedUser.Birthday | date }}"
+            name="Birthday"
+          />
+        </mat-form-field>
+      </form>
+    </mat-card-content>
+    <mat-card-actions class="user-profile-actions">
+      <button mat-raised-button (click)="updateUserInfo()" style="background-color: grey">
+        <mat-icon>edit</mat-icon>
+        Update profile
+      </button>
+      <button mat-raised-button (click)="deleteAccount()" color="warn">
+        <mat-icon>delete_forever</mat-icon>
+        Delete account
+      </button>
+    </mat-card-actions>
+  </mat-card>
 </div>

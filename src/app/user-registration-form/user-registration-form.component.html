@@ -1,9 +1,10 @@
-<mat-card>
-  <mat-card-header>
-    <mat-card-title>Register New User</mat-card-title>
+<div class="user-reg-page">
+  <mat-card class="mat-card-reg">
+  <mat-card-header class="mat-card-header">
+    <mat-card-title>Register</mat-card-title>
   </mat-card-header>
   <mat-card-content>
-    <form>
+    <form class="mat-form">
       <mat-form-field>
         <mat-label>Username</mat-label>
         <input
@@ -50,8 +51,9 @@
     </form>
   </mat-card-content>
   <mat-card-actions>
-    <button mat-raised-button (click)="registerUser()" color="basic">
-      Sign Up
+    <button mat-raised-button (click)="registerUser()" style="background-color: grey">
+      Register
     </button>
   </mat-card-actions>
 </mat-card>
+</div>

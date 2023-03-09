@@ -1,61 +1,51 @@
-$color: #fff;
 $backgroundColor: #372242;
-$borderColorCard: #372242;
+$cardColor: #180124;
+$textColor: #fff;
+$boxShadowColor: grey;
+$labelColor: #636363;
 
+* {
+  box-sizing: border-box;
+}
 
-.profile {
-    background-color: $backgroundColor;
-    padding: 1rem;
-    box-sizing: border-box;
+.profile-page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 40px;
+  background-color: $backgroundColor;
+}
+
+.profile-card {
     max-width: 400px;
-    width: 100%;
-    display: flex;
+    margin: auto;
+    padding: 30px;
     flex-direction: column;
-    margin: 0 auto;
+    box-shadow: 0 0 60px $boxShadowColor;
+    background-color: $cardColor;
+    justify-content: space-evenly;
+    color: $textColor;
+}
 
-    &-card-header {
-        font-size: 1.3rem;
-        color: #000;
-        padding-bottom: 1rem;
-        box-sizing: border-box;
-        font-weight: 500;
-        text-align: center;
-    }
+.profile-title {
+  margin-bottom: 20px;
+  color: $textColor;
+  display: flex;
+  justify-content: center;
+}
 
-    &-update {
-        &-header {
-            color: #000;
-            font-size: 1.2rem;
-            font-weight: normal;
-            padding-bottom: 0.5rem;
-        }
+mat-label {
+  color: $labelColor;
+}
 
+input.mat-input-element {
+  color: $textColor;
+}
 
-
-        form {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-    }
-
-    &-actions {
-        display: flex;
-        align-items: flex-start;
-        gap: 8px;
-
-        &-update-btn {
-            background-color: rgb(82, 11, 98);
-            color: white;
-            border-color: #5f5763;
-            box-shadow: grey;
-
-        }
-
-        &-delete-btn {
-            background-color: #bcbcbc;
-            color: rgb(43, 41, 41);
-            box-shadow: grey;
-        }
-    }
+.mat-card > .mat-card-actions {
+  margin-left: 0;
+  padding-bottom: 0;
+  display: flex;
+  justify-content: space-evenly;
 }

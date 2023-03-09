@@ -1,16 +1,16 @@
-<mat-card>
-  <mat-card-header>
+<mat-card class="mat-card">
+  <mat-card-header class="mat-card-header">
     <mat-card-title>Log In</mat-card-title>
   </mat-card-header>
   <mat-card-content>
-    <form>
+    <form class="login-form">
       <mat-form-field>
         <mat-label>Username</mat-label>
         <input
           matInput
           [(ngModel)]="userData.Username"
-          placeholder="Username"
           type="text"
+          placeholder="Username"
           name="Username"
           required
         />
@@ -29,6 +29,6 @@
     </form>
   </mat-card-content>
   <mat-card-actions>
-    <button mat-raised-button (click)="loginUser()" color="basic">Log In</button>
+    <button mat-raised-button (click)="loginUser()" style="background-color: grey">Log In</button>
   </mat-card-actions>
 </mat-card>
