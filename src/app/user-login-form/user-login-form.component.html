@@ -1,40 +1,42 @@
-<mat-card class="mat-card">
-  <mat-card-header class="mat-card-header">
-    <mat-card-title>Login</mat-card-title>
-  </mat-card-header>
-  <mat-card-content>
-    <form class="login-form">
-      <mat-form-field>
-        <mat-label>Username</mat-label>
-        <input
-          matInput
-          [(ngModel)]="userData.Username"
-          type="text"
-          placeholder="Username"
-          name="Username"
-          required
-        />
-      </mat-form-field>
-      <mat-form-field>
-        <mat-label>Password</mat-label>
-        <input
-          matInput
-          [(ngModel)]="userData.Password"
-          type="password"
-          placeholder="Password"
-          name="Password"
-          required
-        />
-      </mat-form-field>
-    </form>
-  </mat-card-content>
-  <mat-card-actions>
-    <button
-      mat-raised-button
-      (click)="loginUser()"
-      style="background-color: grey"
-    >
-      <mat-icon>login</mat-icon> Log In
-    </button>
-  </mat-card-actions>
-</mat-card>
+<div class="login-page">
+  <mat-card class="login-card">
+    <mat-card-header class="login-card-header">
+      <mat-card-title>Login</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <form class="login-form">
+        <mat-form-field>
+          <mat-label>Username</mat-label>
+          <input
+            matInput
+            [(ngModel)]="userData.Username"
+            type="text"
+            placeholder="Username"
+            name="Username"
+            required
+          />
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Password</mat-label>
+          <input
+            matInput
+            [(ngModel)]="userData.Password"
+            type="password"
+            placeholder="Password"
+            name="Password"
+            required
+          />
+        </mat-form-field>
+      </form>
+    </mat-card-content>
+    <mat-card-actions>
+      <button
+        mat-raised-button
+        (click)="loginUser()"
+        style="background-color: grey"
+      >
+        <mat-icon>login</mat-icon> Log In
+      </button>
+    </mat-card-actions>
+  </mat-card>
+</div>

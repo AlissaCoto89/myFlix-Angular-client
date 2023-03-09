@@ -9,17 +9,21 @@ $labelColor: #636363;
     box-sizing: border-box;
   }
 
-  .mat-card {
+  .login-page {
+    background-color: $backgroundColor;
+  }
+
+  .login-card {
     max-width: 300px;
+    box-shadow: 0 0px 40px $boxShadowColor;
     margin: auto;
     padding: 30px;
     flex-direction: column;
-    box-shadow: 0 10px 30px $boxShadowColor;
     background-color: $cardColor;
     justify-content: space-evenly;
   }
 
-  .mat-card-header {
+  .login-card-header {
     margin-bottom: 20px;
     color: $textColor;
     display: flex;
@@ -44,5 +48,6 @@ $labelColor: #636363;
     padding-bottom: 0;
     display: flex;
     justify-content: space-evenly;
+    box-shadow: 0 0px 40px $boxShadowColor;
   }
 }

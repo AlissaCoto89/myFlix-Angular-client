@@ -34,8 +34,7 @@ $myFlix-Angular-client-theme: mat.define-light-theme((color: (primary: $myFlix-A
 @include mat.all-component-themes($myFlix-Angular-client-theme);
 
 /* You can add global styles to this file, and also import other style files */
-$backgroundColor: #000;
-$cardColor: rgb(56, 56, 56);
+
 
 html,
 body {
@@ -45,16 +44,5 @@ body {
 body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
-  background-color: #000;
-}
-
-.login-dialog-background>.mat-dialog-container,
-.register-dialog-background>.mat-dialog-container {
-  background-color: $backgroundColor;
-}
-
-.genre-dialog-background>.mat-dialog-container,
-.director-dialog-background>.mat-dialog-container,
-.summary-dialog-background>.mat-dialog-container {
-  background-color: $cardColor;
+  background-color: #372242;
 }
