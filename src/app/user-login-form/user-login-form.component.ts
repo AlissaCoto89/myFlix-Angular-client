@@ -18,7 +18,13 @@ export class UserLoginFormComponent implements OnInit {
     public dialogRef: MatDialogRef<UserLoginFormComponent>,
     public snackBar: MatSnackBar
   ) { }
+  
   ngOnInit(): void { }
+
+  /**
+  * Send the form inputs to the backend via API call
+  * @function logInUser
+  */
 
   loginUser(): void {
     this.fetchApiData.userLogin(this.userData).subscribe(
